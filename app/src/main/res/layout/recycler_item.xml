@@ -2,28 +2,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#EFEFEF"
-    android:layout_marginTop="5dp"
     android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
     android:layout_marginRight="5dp"
+    android:background="#EFEFEF"
     android:paddingTop="10dp"
     android:paddingBottom="10dp">
 
     <ImageView
+        android:id="@+id/icon_view"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:id="@+id/icon_view"
-        android:src="@drawable/music_lisner_apk"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:src="@drawable/music_lisner_apk" />
+
     <TextView
+        android:id="@+id/music_title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/music_title_text"
-        android:layout_toEndOf="@+id/icon_view"
         android:layout_centerVertical="true"
-        android:text="music"
-        android:padding="10dp"
-        android:maxLines="1"
+        android:layout_toEndOf="@+id/icon_view"
         android:ellipsize="end"
-        android:textColor="@color/black"/>
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="music"
+        android:textColor="@color/black" />
 </RelativeLayout>

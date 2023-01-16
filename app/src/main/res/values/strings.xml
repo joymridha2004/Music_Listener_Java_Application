@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">music</string>
+    <string name="app_name">music listener</string>
     <string name="Songs">Songs</string>
     <string name="no_song">No Song Found</string>
 </resources>
