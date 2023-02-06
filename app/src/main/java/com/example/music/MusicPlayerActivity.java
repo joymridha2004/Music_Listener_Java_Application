@@ -1,6 +1,7 @@
 package com.example.music;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -25,6 +26,10 @@ public class MusicPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*<------------Night mode disable--------->*/
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         setContentView(R.layout.activity_music_player);
         titleTv = findViewById(R.id.song_title);
         currentTimeTv = findViewById(R.id.current_time);
